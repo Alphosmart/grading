@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="grade()">Score</button>
+    <script>
+      var score = 200;
+
+      function grade() {
+        if (score >= 0 && score < 40) {
+          console.log("Fail");
+        } else if (score >= 40 && score < 45) {
+          console.log("Pass");
+        } else if (score >= 45 && score < 50) {
+          console.log("Good");
+        } else if (score >= 50 && score < 60) {
+          console.log("Very Good");
+        } else if (score >= 60 && score < 70) {
+          console.log("Brilliant");
+        } else if (score >= 70 && score <= 100) {
+          console.log("Excellent");
+        } else {
+          console.log("You are above the required score");
+        }
+      }
+    </script>
+  </body>
+</html>

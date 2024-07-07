@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grading System</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Student Grading System</h1>
+      <div class="form-group">
+        <label for="score">Enter the student's score:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="score"
+          min="0"
+          max="100"
+        />
+      </div>
+      <button onclick="gradeStudent()" class="btn btn-primary">Submit</button>
+      <p id="result" class="mt-3"></p>
+    </div>
+
+    <audio id="soundA" src="/Audio/Hand clapping.mp3"></audio>
+    <audio id="soundB" src="/Audio/Learn a lesson.mp3"></audio>
+    <audio id="soundC" src="/Audio/Shameful to accept.mp3"></audio>
+    <audio id="soundD" src="/Audio/Pipelines.mp3"></audio>
+    <audio
+      id="soundF"
+      src="/Audio/You will never make it African Football meme.mp3"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
